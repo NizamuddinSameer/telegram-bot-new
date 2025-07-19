@@ -1,0 +1,67 @@
+{
+  "_comment_subscriptions": "To add more required subscriptions, just add a new object to the 'subscriptions' array below. The bot will automatically show it.",
+  "subscriptions": [
+    {
+      "text": "🎥 Subscribe on YouTube",
+      "link": "https://www.youtube.com/channel/UCqyiEaeGSfWq-7efMnkq2aw/"
+    },
+    {
+      "text": "📢 Join Telegram Channel",
+      "link": "https://t.me/ManifestYourWisdom"
+    },
+    {
+      "text": "💬 Join WhatsApp Group",
+      "link": "https://chat.whatsapp.com/YourGroupInviteLink"
+    }
+  ],
+
+  "_comment_spin_rewards": "To change spin rewards, edit the items below. 'type' can be 'money' or 'premium_access'. 'value' is the amount or number of days.",
+  "spin_rewards": [
+    { "type": "money", "value": 1, "text": "₹1" },
+    { "type": "money", "value": 3, "text": "₹3" },
+    { "type": "money", "value": 5, "text": "₹5" },
+    { "type": "premium_access", "value": 1, "text": "1 Day Premium Access" }
+  ],
+
+  "app_installs": {
+    "_comment": "To add more app install offers, just add a new object to the 'tasks' array below.",
+    "title": "App Install Offers",
+    "tasks": [
+      {
+        "text": "Task A (Free) - ₹5",
+        "link": "https://example.com/cpa-link-1",
+        "is_locked": false
+      },
+      {
+        "text": "High Pay Task C - ₹50",
+        "link": "https://example.com/cpa-link-3",
+        "is_locked": true
+      }
+    ]
+  },
+
+  "surveys": {
+    "_comment": "To add more survey offers, just add a new object to the 'tasks' array below.",
+    "title": "Survey Completion Tasks",
+    "tasks": [
+      {
+        "text": "Basic Survey - ₹3",
+        "link": "https://example.com/survey-link-1",
+        "is_locked": false
+      },
+      {
+        "text": "Premium India Survey - ₹150",
+        "link": "https://example.com/survey-link-3",
+        "is_locked": true,
+        "countries": ["in"]
+      }
+    ]
+  },
+
+  "_comment_premium": "This section is for the one-time premium purchase offer.",
+  "premium": {
+    "price": "₹99",
+    "payment_link": "https://your-payment-gateway.com/link",
+    "button_text": "💳 Pay Now"
+  }
+}

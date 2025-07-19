@@ -1,0 +1,30 @@
+# .htaccess for routing and security
+
+# Enable the rewrite engine
+RewriteEngine On
+
+# Redirect all HTTPS traffic to HTTP if needed (Render handles SSL)
+# RewriteCond %{HTTPS} on
+# RewriteRule (.*) http://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Ensure that all requests are handled by index.php
+# This is important for the Telegram webhook, which might not directly call the file
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L,QSA]
+
+# Prevent directory listing
+Options -Indexes
+
+# Secure the .htaccess file itself
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Prevent access to sensitive files
+<FilesMatch "\.(json|log|yml|env)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+

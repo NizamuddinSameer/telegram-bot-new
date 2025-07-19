@@ -1,0 +1,21 @@
+{
+    "name": "earnverse/telegram-bot",
+    "description": "An earning bot for Telegram based on a detailed flowchart.",
+    "type": "project",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "you@example.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0"
+    },
+    "autoload": {
+        "files": ["functions.php"]
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}

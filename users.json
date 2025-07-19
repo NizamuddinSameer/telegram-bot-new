@@ -1,0 +1,15 @@
+{
+    "12345678": {
+        "id": 12345678,
+        "first_name": "Demo",
+        "state": "main_dashboard",
+        "country": "in",
+        "balance": 25.5,
+        "is_premium": false,
+        "premium_expiry": null,
+        "referrals": 2,
+        "referred_by": null,
+        "last_spin_date": "2025-07-18",
+        "is_verified": true
+    }
+}

@@ -1,0 +1,4 @@
+# This file will be used to log PHP runtime errors.
+# It is intentionally left empty.
+# Ensure file permissions allow the web server (www-data) to write to it.
+
